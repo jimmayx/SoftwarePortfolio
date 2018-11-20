@@ -3,14 +3,14 @@ description: My portfolio that outlines what I have done throughout the semester
 author: Josh Sim
 github: https://github.com/jimmayx
 about: I am junior developer. Currently in the second year of studying the Bachelor of Information Technology at Otago Polytechnic.
-avatar_url: /static/img/avatar.jpg
+avatar_url: static/img/avatar.jpg
 
 enableTags: true
 tagarray: []
 
 collections:
   project:
-    output: true
+    output: false
     permalink: /project/:path/
 
 social:
@@ -28,15 +28,15 @@ share:
 
 urls:
     - text: About Me
-      url: /about/
+      url: about/
     - text: XML Feed
-      url: /feed.xml
+      url: feed.xml
 
 url: "https://jimmayx.github.io"
 baseurl: ""
 paginate: 20
 per_page: 20
-paginate_path: "/page/:num/"
+paginate_path: "page/:num/"
 markdown: kramdown
 
 
