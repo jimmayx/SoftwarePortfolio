@@ -1,27 +1,48 @@
-# Site settings
 title: Josh Sim's Software Engineering Portfolio
-email: simjd1@student.op.ac.nz
-description: Portfolio for Software Engineering
-baseurl: "/SoftwareEngineeringPortfolio"
-url: "https://jimmayx.github.io/"
-
-author:
-  name     : 'Josh Sim'
-  email    : simjd1@student.op.ac.nz
-  url      : https://jimmayx.github.io/
-  facebook : http://facebook.com/XxJimmayxxX
-  twitter  : http://twitter.com/jimmayx
-
+description: My portfolio that outlines what I have done throughout the semester.
+author: Josh Sim
 github: https://github.com/jimmayx
+about: I am junior developer. Currently in the second year of studying the Bachelor of Information Technology at Otago Polytechnic.
+avatar_url: /static/img/avatar.jpg
 
-paginate: 2
-comments: true
-paginate_path: "/page/:num"
+enableTags: true
+tagarray: []
 
-sass:
-  style: :compressed
-  sass_dir: _sass
+collections:
+  project:
+    output: true
+    permalink: /project/:path/
 
-# Build settings
-markdown  : kramdown
-permalink : /:title/
+social:
+    - icon: fa-facebook
+      link: "https://www.facebook.com/XxJimmayxX"
+    - icon: fa-twitter
+      link: "https://twitter.com/jimmayx"
+    - icon: fa-linkedin
+      link: "https://www.linkedin.com/in/josh-sim-050563143/"
+    - icon: fa-github
+      link: "https://github.com/jimmayx"
+
+share:
+  twitter_username: jimmayx
+
+urls:
+    - text: About Me
+      url: /about/
+    - text: XML Feed
+      url: /feed.xml
+
+url: "https://jimmayx.github.io"
+baseurl: ""
+paginate: 20
+per_page: 20
+paginate_path: "/page/:num/"
+markdown: kramdown
+
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: ['development']

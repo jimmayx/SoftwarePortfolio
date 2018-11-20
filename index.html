@@ -1,13 +1,36 @@
 ---
 layout: default
-title: Home
-slug: home
 ---
 
-<div class="post-list">
-  {% for post in paginator.posts %}
-    {% include post.html %}
-  {% endfor %}
+<div id="home">
+  <h1>{{ site.title }}</h1>
+  <hr />
+<section class="wrapper style3 container special">
+					
+						<div class="row">
+							<div class="6u">
+							
+								<section>
+									<a href="ProfessionalProficiency.html" class="image featured"><img src="static/img/PP.jpg" alt="Professional Looking Guy" width="50px" height="90px"/></a>
+									<header>
+										<h3>Professional Proficiency</h3>
+									</header>
+									<p>Where I descibe my Professional Proficiency in relation to the project.</p>
+								</section>
 
-  {% include pagination.html %}
-</div>
+							</div>
+							<div class="6u">
+							
+								<section>
+									<a href="TechnicalProficiency.html" class="image featured"><img src="static/img/TP.jpg" alt="Professional Looking Guy" width="50px" height="90px"/></a>
+									<header>
+										<h3>Technical Proficiency</h3>
+									</header>
+									<p>Where I descibe how my Technical Proficiency impacted the project.</p>
+								</section>
+
+							</div>
+						</div>		
+					</section>
+
+</div><!-- end #home -->
